@@ -1,0 +1,66 @@
+#preloaderAjax {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99999;
+  height: 100%;
+  width: 100%;
+  background: #ffffff5c;
+  display: flex;
+}
+
+.loaderAjax {
+  margin: auto;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.loaderAjax:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #696cff;
+  border-radius: 50%;
+  opacity: 0;
+  animation: popin 1.5s linear infinite 0s;
+}
+
+.loaderAjax:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #5558ff;
+  border-radius: 50%;
+  opacity: 0;
+  animation: popin 1.5s linear infinite 0.5s;
+}
+
+@keyframes popin {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  5% {
+    opacity: 0.5;
+    transform: scale(0);
+  }
+
+  99% {
+    opacity: 0;
+    transform: scale(2);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}

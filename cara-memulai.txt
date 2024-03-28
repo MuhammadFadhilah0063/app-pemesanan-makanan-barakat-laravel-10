@@ -1,0 +1,3 @@
+- IMPORT DATABASE DENGAN NAMA db_pemesanan_barakat
+- PASTIKAN PHP VERSI 8.1 ATAU DIATASNYA 
+- JALANKAN APLIKASI DENGAN LARAGON DENGAN VIRTUAL HOST .test // agar jquery dan load gambar berjalan dengan benar

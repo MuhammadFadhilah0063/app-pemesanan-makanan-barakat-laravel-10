@@ -1,0 +1,1 @@
+<img src="{{ $model->image }}" class="rounded mx-lg-auto d-block" alt="{{ $model->slug }}" height="85px" width="85px">
